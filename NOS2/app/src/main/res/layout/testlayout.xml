@@ -1,0 +1,159 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="60dp"
+    tools:context=".ReservasiActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAcara"
+        android:hint="Kegiatan / Acara"
+        android:backgroundTint="@color/mainBlue"/>
+
+    <Spinner
+        android:id="@+id/cbBidang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAcara"
+        android:hint="Bidang Pengguna"
+        android:backgroundTint="@color/mainBlue"
+        android:ems="10"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelTgl1"
+        android:layout_below="@+id/cbBidang"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Tanggal Dan Jam Awal Kegiatan"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/textTgl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/labelTgl1"
+        android:ems="10"
+        android:hint="Tanggal Awal"
+        android:backgroundTint="@color/mainBlue"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/textJam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignBaseline="@+id/textTgl1"
+        android:layout_alignBottom="@+id/textTgl1"
+        android:layout_toRightOf="@+id/textTgl1"
+        android:layout_toEndOf="@+id/textTgl1"
+        android:ems="10"
+        android:hint="Jam Awal"
+        android:backgroundTint="@color/mainBlue"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelTgl2"
+        android:layout_below="@+id/textTgl1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Tanggal Dan Jam Akhir Kegiatan"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/textTgl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/labelTgl2"
+        android:ems="10"
+        android:hint="Tanggal Akhir"
+        android:backgroundTint="@color/mainBlue"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/textJam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignBaseline="@+id/textTgl2"
+        android:layout_alignBottom="@+id/textTgl2"
+        android:layout_toRightOf="@+id/textTgl2"
+        android:layout_toEndOf="@+id/textTgl2"
+        android:ems="10"
+        android:hint="Jam Akhir"
+        android:backgroundTint="@color/mainBlue"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+
+    <Spinner
+        android:id="@+id/cbRuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Ruangan"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textTgl2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/mainBlue"
+        android:ems="10"
+        android:textSize="20dp"
+        android:padding="7dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editKet"
+        android:hint="Keterangan"
+        android:layout_below="@+id/cbRuang"
+        android:backgroundTint="@color/mainBlue"/>
+
+    <Button
+        android:id="@+id/btnCekruang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CEK RUANGAN"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/editKet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnTmbhdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESERVASI"
+        android:layout_below="@+id/btnCekruang"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

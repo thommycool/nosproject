@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/greeting_img"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default_half_afternoon"/>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtDashboard"
+            android:text="N.O.S "
+            android:textSize="22sp"
+            android:textColor="#290D0D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/txtDashboard"
+            android:text="NEED OF SPACE"
+            android:textSize="14sp"
+            android:textColor="#062735"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp" />
+
+
+    <eu.long1.spacetablayout.SpaceTabLayout
+        android:id="@+id/spaceTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="eu.long1.spacetablayout.SpaceTabLayoutBehavior"
+        app:number_of_tabs="four"
+        app:starting_position="one" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
